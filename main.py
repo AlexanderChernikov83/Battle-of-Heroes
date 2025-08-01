@@ -13,3 +13,9 @@ class Hero:
 
     def is_alive(self):
         return self.health > 0
+
+    class Game:
+        def __init__(self):
+            player_name = input("Введите имя вашего героя: ")
+            self.player = Hero(player_name)
+            self.computer = Hero("Компьютер")
